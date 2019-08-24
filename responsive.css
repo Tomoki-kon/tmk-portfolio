@@ -1,6 +1,10 @@
   @charset"UTF-8";
 
   @media screen and (max-width:710px) {
+    .header-in {
+      justify-content: center;
+    }
+    
     .gloval-navi {
       display: none;
     }
@@ -118,7 +122,7 @@
       flex-direction: column;
     }
 
-    .portfolio-page-content img {
+    .practice-img {
       padding: 20px;
       width: 80%;
       margin: 0 auto;

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
@@ -18,18 +19,20 @@
       <div class="container">
         <div class="header-in">
           <a href="#"><img class="top-logo" src="images\Daiamond.png" alt=""></a>
-          <ul class="gloval-navi">
-            <li><a class="underline" href="index.html"><span class="far fa-gem"></span>TOP</a></li>
-            <li><a class="underline" href="index.html#profile"><span class="far fa-user"></span>PROFILE</a></li>
-            <li><a class="underline" href="index.html#portfolio"><span class="far fa-address-card"></span>PORTFOLIO</a></li>
-            <li><a class="underline" href="index.html#contact"><span class="far fa-envelope"></span>CONTACT</a></li>
-          </ul>
+          <nav>
+            <ul class="gloval-navi">
+              <li class="gloval-navi-list"><a class="underline gloval-nav-link" href="index.html"><span class="far fa-gem list-item"></span>TOP</a></li>
+              <li class="gloval-navi-list"><a class="underline gloval-nav-link" href="index.html#profile"><span class="far fa-user list-item"></span>PROFILE</a></li>
+              <li class="gloval-navi-list"><a class="underline gloval-nav-link" href="index.html#portfolio"><span class="far fa-address-card list-item"></span>PORTFOLIO</a></li>
+              <li class="gloval-navi-list"><a class="underline gloval-nav-link" href="index.html#contact"><span class="far fa-envelope list-item"></span>CONTACT</a></li>
+            </ul>
+          </nav>
           <nav class="NavMenu">
             <ul>
-              <li><a href="index.html">TOP</a></li>
-              <li><a href="index.html#profile">PROFILE</a></li>
-              <li><a href="index.html#portfolio">PORTFOLIO</a></li>
-              <li><a href="index.html#contact">CONTACT</a></li>
+              <li class="NavMenu-item"><a href="index.html">TOP</a></li>
+              <li class="NavMenu-item"><a href="index.html#profile">PROFILE</a></li>
+              <li class="NavMenu-item"><a href="index.html#portfolio">PORTFOLIO</a></li>
+              <li class="NavMenu-item"><a href="index.html#contact">CONTACT</a></li>
             </ul>
           </nav>
           <!-- ハンバーガーメニュー部分 -->
@@ -42,38 +45,43 @@
       </div>
     </header>
     <!-- header-end -->
-    <div class="portfolio-page">
-      <div class="container">
-        <div class="portfolio-page-contents">
+    <main>
+      <section>
+        <div class="portfolio-page">
+          <div class="container">
+            <div class="portfolio-page-contents">
 
-          <div class="portfolio-page-content" id="isara">
-            <h2>isara</h2>
-            <div class="portfolio-page-img">
-              <img src="images\isara1.jpg" alt="">
-            </div>
-          </div>
+              <div class="portfolio-page-content" id="isara">
+                <h2>isara</h2>
+                <div class="portfolio-page-img">
+                  <img class="practice-img" src="images\isara1.jpg" alt="">
+                </div>
+              </div>
 
-          <div class="portfolio-page-content" id="sango">
-            <h2>sango</h2>
-            <div class="portfolio-page-img">
-              <img src="images\sango1.jpg" alt="">
-              <img src="images\sango2.jpg" alt="">
-              <img src="images\sango3.jpg" alt="">
-              <img src="images\sango4.jpg" alt="">
-            </div>
-          </div>
+              <div class="portfolio-page-content" id="sango">
+                <h2>sango</h2>
+                <div class="portfolio-page-img">
+                  <img class="practice-img" src="images\sango1.jpg" alt="">
+                  <img class="practice-img" src="images\sango2.jpg" alt="">
+                  <img class="practice-img" src="images\sango3.jpg" alt="">
+                  <img class="practice-img" src="images\sango3.jpg" alt="">
+                  <img class="practice-img" src="images\sango4.jpg" alt="">
+                </div>
+              </div>
 
-          <div class="portfolio-page-content" id="pas-pol">
-            <h2>pas-pol</h2>
-            <div class="portfolio-page-img">
-              <img class="big" src="images\pas-pol1.jpg" alt="">
-              <img src="images\pas-pol2.jpg" alt="">
-              <img src="images\pas-pol3.jpg" alt="">
+              <div class="portfolio-page-content" id="pas-pol">
+                <h2>pas-pol</h2>
+                <div class="portfolio-page-img">
+                  <img class="practice-img big" src="images\pas-pol1.jpg" alt="">
+                  <img class="practice-img" src="images\pas-pol2.jpg" alt="">
+                  <img class="practice-img" src="images\pas-pol3.jpg" alt="">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <!-- footer-start -->
     <footer>
       <small>2019 (c) TOMOKI</small>
