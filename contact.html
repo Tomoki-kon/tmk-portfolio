@@ -57,72 +57,38 @@
     </header>
     <main>
       <div class="main-view">
-        <ul class="main-view__slide your-class" id="slider">
-          <li class="slide__list"><img class="slide__item" src="images\flash1.jpg" alt=""></li>
-          <li class="slide__list none"><img class="slide__item" src="images\flash2_2.jpg" alt=""></li>
-          <li class="slide__list none"><img class="slide__item" src="images\flash3.jpg" alt=""></li>
-        </ul>
-        <ul class="responsive-main-view__slide your-class" id="slider">
-          <li class="slide__list"><img class="slide__item" src="images\flash_sp1.jpg" alt=""></li>
-          <li class="slide__list none"><img class="slide__item" src="images\flash_sp2_2.jpg" alt=""></li>
-          <li class="slide__list none"><img class="slide__item" src="images\flash_sp3.jpg" alt=""></li>
-        </ul>
+        <div class="main-view__bg">
+          <h2 class="main-view__title">お問い合わせ</h2>
+        </div>
       </div>
-    <!-- news-start -->
-      <section class="news">
+    <!-- contact-form-start -->
+      <section class="contact-form">
         <div class="container">
-          <h2 class="news__heading heading--design">新着情報</h2>
-          <div class="news__area">
-            <p class="news__paragraph"><span class="news__date">2019.08.01</span><a href="" class="news__link"><span class="news__content">お盆休み（旧盆）のお知らせ</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2019.04.11</span><a href="" class="news__link"><span class="news__content">ゴールデンウィーク休業日のお知らせ</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2018.12.27</span><a href="" class="news__link"><span class="news__content">年末年始の営業日、休業日のお知らせ</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2018.08.21</span><a href="" class="news__link"><span class="news__content">お盆休み（旧盆）のお知らせ</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2018.02.26</span><a href="" class="news__link"><span class="news__content">アパート工事進捗情報を追加しました。</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2017.12.28</span><a href="" class="news__link"><span class="news__content">年末年始の営業日、休業日のお知らせ</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2017.12.01</span><span class="news__content">当社のホームページをリニューアルしました。</span></p>
-            <p class="news__paragraph"><span class="news__date">2017.11.29</span><a href="" class="news__link"><span class="news__content">アパート工事進捗状況を追加しました。</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2017.11.15</span><a href="" class="news__link"><span class="news__content">沖縄ガスに来た献血バスに参加してきました。</span></a></p>
-            <p class="news__paragraph"><span class="news__date">2017.10.02</span><a href="" class="news__link"><span class="news__content">事業多角化の一環としてアパートを建築中です。</span></a></p>
-          </div>
-        </div>
-      </section>
-    <!-- news-end -->
-    <!-- motto-start -->
-      <section class="motto">
-        <div class="container">
-          <div class="image--center">
-            <img class="motto__image" src="images\181227.jpg" alt="" >
-          </div>
-          <h2 class="motto__heading">沖縄ガスリビングは！<br>お客様が満足する快適な住まいと環境を一緒に創造していきます</h2>
-          <p class="motto__text">平成の時代と共に歩んで30年。次の時代も『暮らしをより快適に安全に』変化に対応していく会社であり続けます。</p>
-          <p class="motto__text">これからもお客様が満足する快適な住まいと環境を一緒に創造していきます。<br>ガス工事全般・新築・リフォーム工事の事なら沖縄ガスリビングにお任せください！</p>
-        </div>
-      </section>
-      <!-- motto-end -->
-    <!-- contents-start -->
-      <div class="contents">
-        <div class="container">
-          <div class="contents__area">
-            <section class="relation-link__area contents__section">
-              <h2 class="relation-link__heading contents__heading"><span class="icon">〇</span>関連リンク</h2>
-              <div class="relation-link__image-area image--center">
-                <div><a class="relation-link__link animetion--opacity" href=""><img class="relation-link--image" src="images\exlink1.jpg" alt=""></a></div>
-                <div><a class="relation-link__link animetion--opacity" href=""><img class="relation-link--image" src="images\exlink2.jpg" alt=""></a></div>
+          <div class="contact-form__area">
+            <h2 class="contact-form__heading heading--design">お問い合わせ</h2>
+            <form action="">
+              <dl>
+                <dt class="contact-form__text-area"><span class="contact-form__required">必須</span><span class="contact-form__text">お名前</span></dt>
+                  <dd class="contact-form__input"><input type="text" name="name" class="name input__area" required></dd>
+                <dt class="contact-form__text-area"><span class="contact-form__required">必須</span><span class="contact-form__text">電話番号</span></dt>
+                  <dd class="contact-form__input"><input type="tel" name="tel" class="tel input__area" required></dd>
+                <dt class="contact-form__text-area"><span class="contact-form__required input__area">必須</span><span class="contact-form__text">メールアドレス</span></dt>
+                  <dd class="contact-form__input"><input type="email" name="email" class="email input__area" required></dd>
+                <dt class="contact-form__text-area"><span class="contact-form__required">必須</span><span class="contact-form__text">お問い合わせ</span></dt>
+                  <dd class="contact-form__input border-none"><textarea name="message" class="message input__area--message" required></textarea></dd>
+              </dl>
+              <div class="image--center">
+                <button class="btn"><span class="fas fa-envelope icon--small"></span>メールを送信する</button>
               </div>
-            </section>
-            <section class="radio contents__section">
-              <h2 class="radio__heading contents__heading"><span class="icon">〇</span>沖縄ガスリビングラジオCM</h2>
-                <p class="radio__text">システムキッチン こずかい篇</p>
-                <p class="radio__audio">audioが入ります</p>
-                <p class="radio__text">衣類乾燥機 部活篇</p>
-                <p class="radio__audio">audioが入ります</p>
-                <p class="radio__text">衣類乾燥機 部長篇</p>
-                <p class="radio__audio">audioが入ります</p>
-            </section>
+            </form>
+            <div class="attention__text-area">
+              <p class="attention__text">「必須」は必須項目です。※お問い合わせフォームの必要事項をご記入の上、送信をお願いいたします。</p>
+              <p class="attention__text">※送信後にお問い合わせ完了のメールが届かなかった場合は、メールアドレスが間違っているか、 迷惑メールに分類されている可能性がありますので、いま一度ご確認をお願いいたします。</p>
+            </div>
           </div>
         </div>
-      </div>
-    <!-- contents-end -->
+      </section>
+    <!-- contact-form-end -->
     <!-- pick-up-start -->
       <div class="pick-up">
 
@@ -161,7 +127,7 @@
             <ul class="contact__menu">
               <li contact="menu__list"><img src="images\contact_01.png" alt=""></li>
               <li contact="menu__list"><a href="#"><img class="animetion--opacity" src="images\contact_02.png" alt=""></a></li>
-              <li contact="menu__list"><a href="#"><img class="animetion--opacity" src="images\contact_03.png" alt=""></a></li>
+              <li contact="menu__list"><a href="contact.html"><img class="animetion--opacity" src="images\contact_03.png" alt=""></a></li>
             </ul>
           </div>
         </div>
